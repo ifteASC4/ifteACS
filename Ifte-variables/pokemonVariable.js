@@ -1,0 +1,21 @@
+var dragoniteHp = 91;
+var dragoniteNum = 149;
+var dragoniteType = "Dragon and Flying";
+var dragoniteBestMove = "Outrage";
+var dragoniteLastEvo = true;
+var dragoniteAttack = 134;
+var dragoniteDefence = 94;
+var dragoniteSpeed = 80;
+var dragoniteSpAttack = 100;
+var dragoniteSpDefence = 100;
+
+console.log(dragoniteHp);
+console.log(dragoniteNum);
+console.log(dragoniteType);
+console.log(dragoniteBestMove);
+console.log(dragoniteLastEvo);
+console.log(dragoniteAttack);
+console.log(dragoniteDefence);
+console.log(dragoniteSpeed);
+console.log(dragoniteSpAttack);
+console.log(dragoniteSpDefence);
