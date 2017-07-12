@@ -10,4 +10,30 @@ var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',
 
 // console.log(alphabet.length); 
 
-console.log(alphabet[randLetter(25)]);
+// console.log(alphabet[randLetter(25)]);
+
+var myString = "";
+
+for ( i=0; i< randLetter(10); i ++){
+    myString = myString + alphabet[randLetter(25)];
+    // console.log(alphabet[randLetter(25)]); 
+}
+
+console.log(myString);
+
+function randWord(){
+for ( i=0; i< randLetter(10); i ++){
+    myString = myString + alphabet[randLetter(25)];
+    // console.log(alphabet[randLetter(25)]); 
+    }
+// console.log(myString);
+return myString
+}
+
+function randSentece(){
+    var mySentence = ""
+    for ( i=0; i<5; i++){
+        mySentence = mySentence + randWord();
+    }
+    console.log(randSentence);
+}
