@@ -1,3 +1,7 @@
+// i commented everything below for reference 
+
+
+
 // var prompt = require('prompt-sync')();
 // 
 // get input from the user. 
