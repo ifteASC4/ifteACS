@@ -1,8 +1,17 @@
-var myPokemonRoster = []
+// var myPokemonRoster = [];
 
-myPokemonRoster[0]= ["Charmander", "Fire", 39, 52, 43, flase];
-myPokemonRoster[1]= ["Pikachu", "Electric", 35, 55, 40, flase];
-myPokemonRoster[2]= ["Eevee", "Normal", 55, 55, 50, flase];
-myPokemonRoster[3]= ["Squirtle", "Water", 45, 48, 65, flase];
-myPokemonRoster[4]= ["Charmander", "Fire", 39, 52, 43, flase];
-myPokemonRoster[5]= ["Charmander", "Fire", 39, 52, 43, flase];
+// myPokemonRoster[0]= ["Charmander", "Fire", 39, 52, 43, false];
+// myPokemonRoster[1]= ["Pikachu", "Electric", 35, 55, 40, false];
+// myPokemonRoster[2]= ["Eevee", "Normal", 55, 55, 50, false];
+// myPokemonRoster[3]= ["Squirtle", "Water", 45, 48, 65, false];
+// myPokemonRoster[4]= ["Bayleef", "Grass", 60, 62, 80, false];
+// myPokemonRoster[5]= ["Snorlax", "Water", 160, 110, 65, false];
+myPokemonRoster = [["Charmander", "Fire", 39, 52, 43, false], ["Pikachu", "Electric", 35, 55, 40, false], ["Eevee", "Normal", 55, 55, 50, false], ["Squirtle", "Water", 45, 48, 65, false], ["Bayleef", "Grass", 60, 62, 80, false], ["Snorlax", "Water", 160, 110, 65, false]];
+
+// console.log("Pokemon: " + myPokemonRoster[0][0]);
+
+var x = myPokemonRoster;
+
+for (i=0; i< 6; i ++){
+    console.log(myPokemonRoster[x]);
+}
