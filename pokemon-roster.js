@@ -12,6 +12,11 @@ myPokemonRoster = [["Charmander", "Fire", 39, 52, 43, false], ["Pikachu", "Elect
 
 var x = myPokemonRoster;
 
-for (i=0; i< 6; i ++){
-    console.log(myPokemonRoster[x]);
+console.log("")
+
+for (var i=0; i< 6; i++){
+    console.log(x[i]);
+    for(var j=0;j<6;j++){
+        console.log(x[i][j]);
+    }
 }
