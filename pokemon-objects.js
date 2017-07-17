@@ -17,24 +17,37 @@ var squirtle = new pokemon(44, 48, 65, false, "Squirtle", "Water");
 var chimchar = new pokemon(44, 58, 44, false, "Chimchar", "Fire");
 var snorlax = new pokemon(160, 110, 65, false, "Snorlax", "Normal");
 
-myPokemonRoster.push(eevee, pikachu, charmander, squirtle, chimchar, snorlax);
+myPokemonRoster.push(eevee);
+myPokemonRoster.push(pikachu);
 
-var health = myPokemonRoster.hp; 
+// var health = myPokemonRoster.hp; 
 
-for (i=0; i<6; i++){
-    myPokemonRoster.hp = (health - 10);
-}
+// for (i=0; i<6; i++){
+//     myPokemonRoster.hp = (health - 10);
+// }
 
 // var x = pokemon();
 
-// for (var i=0; i< myPokemonRoster.length; i++){
-//     myPokemonRoster.push(x);
-// }
+for (var i=0; i< myPokemonRoster.length; i++){
+    console.log(myPokemonRoster[i].name)
+}
 
 // console.log(eevee);
 // myPokemonRoster.push(eevee);
 // myPokemonRoster.push(eevee2);
 
-// console.log(myPokemonRoster[1].legend);
-console.log(myPokemonRoster[0]);
+function printHello(name){
+    $('body').append('<p>' + name + '</p>');
+}
+
+
+
+printHello('Victor');
+
+printHello(222);
+
+printHello(true);
+
+
+
 
