@@ -10,6 +10,12 @@ function pokemon(hp, atk, def, legend, name, type){
     // return pokemon;
 }
 
+var eevvee = {
+    'hp': 150,
+    'is legendary': true
+
+}
+
 var eevee = new pokemon(55, 55, 50, false, "Eevee", "Normal");
 var pikachu = new pokemon(35, 55, 40, false, "Pikachu", "Electric");
 var charmander = new pokemon(39, 52, 43, false, "Charmander", "Fire");
@@ -30,17 +36,21 @@ myPokemonRoster.push(pikachu);
 
 for (var i=0; i< myPokemonRoster.length; i++){
     console.log(myPokemonRoster[i].name)
-}
+} 
 
 // console.log(eevee);
 // myPokemonRoster.push(eevee);
 // myPokemonRoster.push(eevee2);
 
 function printHello(name){
-    $('body').append('<p>' + name + '</p>');
+    return name
 }
 
-
+function getArea(length, width){
+    return length * width;
+}
+getArea(2, 5);
+console.og
 
 printHello('Victor');
 

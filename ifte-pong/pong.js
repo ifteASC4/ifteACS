@@ -1,8 +1,9 @@
 var x = 100; // starting x coordinate
 var y = 100; // starting y coordinate
-var x2 = 2; //  direction of x
-var y2 = 4; // direction of y
+var x2 = 2; //  direction of x and Xspeed of ball
+var y2 = 4; // direction of y and Yspeed of ball
 var postionx = 0;
+var rect2 = 0;
 
 function setup() {
     createCanvas(700,700);
@@ -11,6 +12,7 @@ function setup() {
 function draw(){
     background("gray");
     ellipse(x, y, 40, 40);
+    rect2 = rect(postionx, 20, 80, 20);
    
    if(x>=700-5){
        x2 = -x2;
@@ -37,26 +39,30 @@ function draw(){
    y = y + y2;
 
    fill("Blue");
-   rect(postionx, 680, 70, 20);
-   if(keyIsDown(RIGHT_ARROW))
+   rect(postionx, 660, 80, 20);
+   if(keyIsDown(RIGHT_ARROW)){
     postionx = postionx + 5;
     postionx = postionx >= 620 ? 620:postionx;
-   if(keyIsDown(LEFT_ARROW))
+   }
+   if(keyIsDown(LEFT_ARROW)){
     postionx = postionx - 5;
-    postionx = postionx <= 10 ? 10:postionx;
+    postionx = postionx <= 0 ? 0:postionx;
+   }
 
     fill("red");
-   rect(postionx, 20, 70, 20);
-   if(keyIsDown(UP_ARROW))
-    postionx = postionx + 5;
-    postionx = postionx >= 620 ? 620:postionx;
-   if(keyIsDown(DOWN_ARROW))
-    postionx = postionx - 5;
-    postionx = postionx <= 10 ? 10:postionx;
+   rect(postionx, 20, 80, 20);
+   if(keyIsDown(68)){
+    rect2 = rect2 + 5;
+    rect2 = rect2 >= 620 ? 620:rect2;
+   }
+   if(keyIsDown(65)){
+    rect2 = rect2 - 5;
+    rect2 = rect2 <= 0 ? 0:rect2;
+   }
 }
 
 // function keyTyped(){
 //     if(key === 'd'){
-//         postionx = postionx + 100;
+//         postionx = postionx + 5;
 //     }
 // }
