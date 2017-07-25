@@ -1,0 +1,26 @@
+.container-fluid{
+    background: blue;
+    color: white;
+}
+
+.jumbotron h1{
+    text-align: center;
+}
+
+.navbar-header{
+    color: white;
+}
+
+
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav a {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav a:hover {
+    color: orange;
+}
