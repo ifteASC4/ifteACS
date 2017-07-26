@@ -1,0 +1,28 @@
+.jumbotron{
+    height: 500px; 
+    padding: 400px 0px 0px 0px;
+    
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    color: black;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    font-size: 20px;
+}
+.nav-tabs>li>a{
+    color: black;
+    font-size: 20px;
+}
+.btn-default{
+    font-size: 25px;
+    color: red;
+}
+
+.container-fluid{
+    padding: 40px;
+}
+
+.images{
+    padding: 20px;
+}
