@@ -3,7 +3,7 @@ var y = 100; // starting y coordinate
 var x2 = 2; //  direction of x and Xspeed of ball
 var y2 = 4; // direction of y and Yspeed of ball
 var postionx = 0;
-var rect2 = 0;
+var rect2 = 0;  
 
 function setup() {
     createCanvas(700,700);
@@ -12,7 +12,7 @@ function setup() {
 function draw(){
     background("gray");
     ellipse(x, y, 40, 40);
-    rect2 = rect(postionx, 20, 80, 20);
+    // rect2 = rect(postionx, 20, 80, 20);
    
    if(x>=700-5){
        x2 = -x2;
