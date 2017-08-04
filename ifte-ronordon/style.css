@@ -2,7 +2,7 @@
     text-align: center;
     height: 100vh;
     padding: 300px;
-    background-image: url("pictures/rondon.png");
+    background-image: url("rondon.png");
     background-size: cover;
     color: rgba(0,0,0,.5);
     border-bottom:black 4px dotted;
@@ -28,17 +28,20 @@ h1{
 
 .btn-primary{
     background: rgba(200,0,0,.7);
-}
+} 
  .btn-primary:hover{
     background: rgba(200,0,0,.8);
-}
+} 
  .btn-primary:active:focus{
     background: rgba(200,0,0,1);
-}
+} 
  .btn-primary:active{
     background: rgba(200,0,0,1);
-}
+} 
 
 .pfp{
     border-radius:10%;
+}
+.content{
+    display: none
 }
