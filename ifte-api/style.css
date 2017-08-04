@@ -1,0 +1,25 @@
+.jumbotron {                                                                          
+    text-align: center;
+    height: 550px;
+    padding: 100px;
+    background-image: url(assets/starwars.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.col-md-6 {
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.row {
+    padding: 10px;
+    
+}
+.row p {
+    padding: 10px;
+    width: 100px;
+}
+.col-md-3{
+    border: 0; 
+}

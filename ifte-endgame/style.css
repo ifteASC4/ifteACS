@@ -1,0 +1,44 @@
+.title{
+    text-align: center;
+    height: 100vh;
+    padding: 300px;
+    background-image: url("pictures/rondon.png");
+    background-size: cover;
+    color: rgba(0,0,0,.5);
+    border-bottom:black 4px dotted;
+}
+
+.row{
+    padding: 30px;
+    text-align: center;
+}
+.answer{
+    text-align: center;
+    color: rgba(0,200,0,.9);
+
+}
+
+h1{
+    background: rgba(255,255,255,.4)
+}
+
+.quote{
+    border-bottom:black 4px dotted;
+}
+
+.btn-primary{
+    background: rgba(200,0,0,.7);
+}
+ .btn-primary:hover{
+    background: rgba(200,0,0,.8);
+}
+ .btn-primary:active:focus{
+    background: rgba(200,0,0,1);
+}
+ .btn-primary:active{
+    background: rgba(200,0,0,1);
+}
+
+.pfp{
+    border-radius:10%;
+}

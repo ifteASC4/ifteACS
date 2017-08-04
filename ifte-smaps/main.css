@@ -1,0 +1,27 @@
+.jumbotron{
+    height: 300px;
+    text-align: center;
+    background-image:url("https://image.freepik.com/free-vector/abstract-background-with-a-3d-pattern_1319-68.jpg");  
+}
+
+.navbar-default{
+    margin: -30px 0px 0px 0px;
+    text-align: center;
+}
+
+body{
+    background-image:url("https://image.freepik.com/free-psd/white-wood-texture-background-design_1022-75.jpg");
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.search{
+    padding: 100px;
+}
+
+
+
+
+.map{
+    padding:0px 0px 30px 240px
+}
