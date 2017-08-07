@@ -1,7 +1,7 @@
 var playerChoice = 'r';
 
 var choices = ['r','p','s']; 
-var compChoice = choices[Math.floor(Math.random()*3)]; //random computer choice
+var compChoice = choices[Math.floor(Math.random()*3)]; //random computer choices
 
 // tie situation
 if (playerChoice == compChoice){

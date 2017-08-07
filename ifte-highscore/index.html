@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Russian Roulette</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- start of game site  -->
+    <div class="jumbotron">
+        <!--start of jumbotron  -->
+        <div class="container">
+            <h1>RUSSIAN ROULETTE</h1>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">PLAY NOW IF U DARE!</a></p>
+        </div>
+    </div>
+    <!--end of jumbotron  -->
+
+    <div class="row bottom">
+        <!--start of game/high score  -->
+        <div class="col-md-8">
+            <h2 id="outcome"></h2>
+            <!-- stuff to modify -->
+            <!--For user to input messages-->
+            <div class="userContainer">
+                <form>
+                    <div class="textContainer">
+                        <div>
+                            <p>Your name:</p><input id="name" type="text">
+                        </div>
+                        <!-- <div>
+                            <p>Status</p><input id="status" type="text">
+                        </div> -->
+
+                    </div>
+                    <div class="GObutton">
+                        <input type="reset" onclick="updateDB();" value="Submit score!">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <h1>High Score</h1>
+            <div id="highscore"></div>
+
+        </div>
+    </div>
+    <!--end of game/high score  -->
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDxLdhgEIvaYRauM3STRx9h1JpNDzKI4fY",
+            authDomain: "mychat-e6e72.firebaseapp.com",
+            databaseURL: "https://mychat-e6e72.firebaseio.com",
+            projectId: "mychat-e6e72",
+            storageBucket: "",
+            messagingSenderId: "742883599677"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script src="http://code.jquery.com/jquery-3.2.1.slim.js" integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <!-- end of game site  -->
+</body>
+</html>
