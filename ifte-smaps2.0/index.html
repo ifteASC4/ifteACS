@@ -1,47 +1,146 @@
-<!-- api key: AIzaSyBI4H4v0Ut41KXHMFCmDgab52_Kh6FCrVs  -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>S-Maps 2.0</title>
+    <!-- start of jquery stuff -->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-
-    <!-- Latest compiled and minified CSS -->
+        crossorigin="anonymous"></script>
+    <!-- end of jquery stuff -->
+    <!-- bootstrap stuff -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
-
-    <script src="search.js"></script>
-    <script src="app.js"></script>
+        crossorigin="anonymous"></script>
+    <!-- end of bootstrap stuff -->
+    <!--linked custom stuff  -->
     <link rel="stylesheet" href="main.css">
+    <script src="app.js"></script>
 </head>
 
 <body>
-<input id="pac-input" class="controls" type="text" placeholder="Search Box">
-<div id="map"></div>
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI4H4v0Ut41KXHMFCmDgab52_Kh6FCrVs&libraries=places&callback=initAutocomplete" async
-    defer></script>
-
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
-
-        </script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI4H4v0Ut41KXHMFCmDgab52_Kh6FCrVs&callback=initMap">
-
-        </script>
-
+    <!-- start of jumbotron -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>
+                S-Maps2.0
+            </h1>
+        </div>
+    </div>
+    <!-- end of jumbotron -->
+    <!-- start of navbar -->
+    <nav class="navbar navbar-default navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                <a class="navbar-brand" href="#">S-Maps</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" data-toggle="modal" data-target="#howtouseModal">How to use</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#aboutModal">About</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#creditsModal">Credits</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- start of navbar search grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <!-- button to go to the other page stuff -->
+                <a class="btn btn-default btn-lg" href="mapapi/index.html" role="button">Click here to view a specific location!</a>
+                <!-- end of button to go to the other page stuff -->
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <!-- end of navbar search grid -->
+    <!-- start of map grid -->
+    <div class="container" id="maps">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" id "midMap">
+                <!-- start map -->
+                <iframe width="550" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAZPFlgaPA7tHSvnAZRpiF_pgQ18za51DY
+            &q=Chelsea+Market,NewYork+NY" allowfullscreen>
+                </iframe>
+                <!-- end map -->
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+    <!-- end of map grid -->
+    <!--Modal stuff  -->
+    <!--modal of how to use  -->
+    <div class="modal fade" id="howtouseModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">How to use</h2>
+                </div>
+                <div class="modal-body">
+                    To use S-Maps 2.0, all you have to is click the button on top of the map which will lead you to a fullscreen version of the
+                    map for easier use. Then you can search up your favorite place and look for popular hot-spots!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal how to use -->
+    <!--modal of about  -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Credits</h2>
+                </div>
+                <div class="modal-body">
+                    S-Maps is a student project created during the All Star Code Summer Intesive program of 2017.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal of about  -->
+    <!-- Modal of credits -->
+    <div class="modal fade" id="creditsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Credits</h2>
+                </div>
+                <div class="modal-body">
+                    S-Maps was created using Bootstrap, Jquery and Google Maps API.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal of credits  -->
+    <!--end of modal stuff  -->
 </body>
 
 </html>
