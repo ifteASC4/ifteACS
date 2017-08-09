@@ -1,6 +1,15 @@
-
+ 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .bar{
+        color: white;
+    }
+}
 .jumbotron{
     margin-top: -30px; 
     height: 760px;
