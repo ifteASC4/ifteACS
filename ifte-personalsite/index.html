@@ -8,7 +8,7 @@
 
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-        
+
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -39,7 +39,7 @@
 
       <ul class="nav navbar-nav">
         <li><a href="#">Home</a></li>
-        <li><a href="aboutme/index.html">About Me</a></li>
+        <li><a href="#">About Me</a></li>
         <li><a href="#">Education</a></li>
         <li><a href="#">Projects</a></li>
       </ul>
@@ -52,15 +52,31 @@
         <img src="pic/pfp.jpg" alt="" class="img-responsive">
         </div>
         <h1>Hello, I'm Ifte!</h1>
-        <a  href="https://www.linkedin.com/in/ifte-ahmed-367b49144/"><img src="pic/linkedin.png" alt=""> </a>
+        <a  href="https://www.linkedin.com/in/ifte-ahmed-367b49144/" target="_blank"><img src="pic/linkedin.png" alt=""> </a>
         
     </div>
 
-<div class="container about-me">
+<div class="container about-me"><!-- start of about me  -->
+
+    <!-- start of about me header  -->
+    <div class="row edutitle">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+                <div class="box">
+                    <div class="text animated infinite bounce">
+                    <h1>About Me</h1>
+                    </div>
+                    </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <!-- end of about me header  -->
+
+    <!-- start of about me column with info  -->
     <div class="row">
         <div class="col-md-4">
             <div class="page-header">
-                 <h1>About Me</h1>
+                 <h1>My Story</h1>
             </div>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
@@ -86,17 +102,28 @@
             </a>
         </div>
     </div>
-</div>
+    <!-- start of about me column with info  -->
+
+</div><!-- start of about me column with info  -->
 
 <div class="container education">
+
+    <div class="row edutitle">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Education</h1>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+
+
+
     <div class="row education">
         <div class="col-md-4">
             <div class="page-header">
                  <h1>High School</h1>
             </div>
-            <a href="#" class="thumbnail">
-                <img src="http://via.placeholder.com/350x150" alt="...">
-            </a>
+            <a href="http://www.hsmse.org/" target="_blank" class="thumbnail" id="hsmse"></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English. Many desktop publishing packages and web
@@ -108,9 +135,7 @@
             <div class="page-header">
                  <h1>All-Star Code</h1>
             </div>
-            <a href="#" class="thumbnail">
-                <img src="http://via.placeholder.com/350x150" alt="...">
-            </a>
+            <a href="http://www.allstarcode.org/" target="_blank" class="thumbnail" id="asc"></a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
             The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English. Many desktop publishing packages and web
@@ -122,7 +147,7 @@
             <div class="page-header">
                  <h1>College</h1>
             </div>
-            <a href="#" class="thumbnail">
+            <a  class="thumbnail">
                 <img src="http://via.placeholder.com/350x150" alt="...">
             </a>
             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -136,22 +161,36 @@
 </div>
 
 <div class="container projects">
-    <div class="row projects">
-        <div class="col-md-4">
-            <div class="page-header">
-                 <h1>Project 1</h1>
-            </div>
-            <a href="#" class="thumbnail">
-                <img src="http://via.placeholder.com/350x150" alt="...">
-            </a>
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
-            'Content here, content here', making it look like readable English. Many desktop publishing packages and web
-            page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
-            web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes
-            on purpose (injected humour and the like).</p>
+
+    <div class="row edutitle">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h1>Projects</h1>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-2"></div>
+    </div>
+
+
+    <div class="row projects">
+         <div class="col-md-4"> <!-- start of pong project -->
+            <div class="page-header">
+                 <h1>Pong</h1>
+            </div>
+            <a href="https://cdn.rawgit.com/ifteASC4/ifteACS/90f1c293/ifte-pong/index.html" target="_blank" class="thumbnail" id="pong">
+            </a>
+            <h3>Used Html and p5, a JavaScript library</h3>
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <a class="btn btn-default" href="https://cdn.rawgit.com/ifteASC4/ifteACS/90f1c293/ifte-pong/index.html" target="_blank" role="button">Demo</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a class="btn btn-default" href="https://github.com/ifteASC4/ifteACS/tree/master/ifte-pong" target="_blank" role="button">Repo</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+        </div><!-- end of pong project -->
+        <div class="col-md-4"><!-- start of 2 project -->
             <div class="page-header">
                  <h1>Project 2</h1>
             </div>
@@ -164,8 +203,8 @@
             page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
             web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes
             on purpose (injected humour and the like).</p>
-        </div>
-        <div class="col-md-4">
+        </div><!-- end of 2 project -->
+        <div class="col-md-4"><!-- start of 3 project -->
             <div class="page-header">
                  <h1>Project 3</h1>
             </div>

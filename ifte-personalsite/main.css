@@ -1,18 +1,45 @@
- 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 
-@media only screen and (max-width: 500px) {
-    body {
-        background-color: lightblue;
-    }
-
-    .bar{
-        color: white;
-    }
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  
 }
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+
 .jumbotron{
     margin-top: -30px; 
-    height: 760px;
+    height: 100vh;
     text-align: center; 
     /* padding: 100px 300px 300px 500px; */
     font-family: 'Indie Flower', cursive;
@@ -30,14 +57,73 @@
 .container{
      font-family: 'Indie Flower', cursive;
 }
-.container.education{
-    padding: 100px 0px 0px 0px;
-}
 
 .row.education p{
     padding: 10px 0px 0px 0px;
 }
 
-/* .row education{
-    padding: 1000px 0px 0px 0px;
-} */
+.edutitle h1{
+    text-align: center;
+    font-size: 600%;
+}
+
+#pong{
+    background-image: url("pic/pong.png");
+    background-size: cover;
+    background-position: center;
+
+    height: 300px;
+    width: 100%;
+}
+
+#hsmse{
+    background-image: url("pic/hsmse.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+
+    transition: background-image .5s;
+}
+
+#hsmse:hover{
+    background-image: url("pic/preview.png");
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image .5s;
+}
+
+#asc{
+    background-image: url("pic/asc.png");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100%;
+
+    transition: background-image .5s;
+}
+
+#asc:hover{
+    background-image: url("pic/ascpreview.png");
+    background-size: cover;
+    background-position: center;
+
+    transition: background-image .5s;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .bar{
+        color: white;
+    }
+
+    .row.education p{
+    padding: 10px;
+    }
+
+}
